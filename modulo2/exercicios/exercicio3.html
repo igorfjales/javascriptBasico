@@ -1,0 +1,34 @@
+<!--
+3º exercício
+
+A partir do seguinte vetor:
+
+var nomes = ["Igor", "Gabriel", "Lucas"];
+Preencha uma lista (<ul>) no HTML com os itens da seguinte forma:
+● Igor
+● Gabriel
+● Lucas
+-->
+
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Exercício 3</title>
+
+    <body>
+      <ul class="lista"></ul>
+      <script>
+        var nomes = ["Igor", "Gabriel", "Lucas", "Jales"];
+
+        var lista = document.querySelector(".lista");
+
+        for (const nome of nomes) {
+          let linha = document.createElement("li");
+          let textoNome = document.createTextNode(nome);
+          linha.appendChild(textoNome);
+          lista.appendChild(linha);
+        }
+      </script>
+    </body>
+  </head>
+</html>

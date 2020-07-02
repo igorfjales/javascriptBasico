@@ -1,0 +1,24 @@
+<!-- 
+    Revisando tags html 
+    Aonde ficam os scripts?
+    Aonde a tag script deve ficar?
+-->
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <Title>Aula 1</Title>
+    </head>
+
+    <body>
+
+        <!-- 
+            Por boas práticas, a tag script deve ser a última antes de fechar a tag body, pois o JS trabalha 
+            com a árvore de elementos de tela (DOM) e a renderização da página acontece de forma vertical (de cima 
+            para baixo). Se colocarmos a tag script antes e precisarmos de algo que um script forneça, ele pode
+            não ser localizado pois tal código não foi carregado na página ainda.
+            --> 
+        <script>
+            console.log('Hello World!');
+        </script>
+    </body>
+</html>
